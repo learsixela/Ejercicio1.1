@@ -69,6 +69,7 @@ public class Compania {
 	//agregarCliente: agrega un cliente al arreglo 
 	//validando que no supere la capacidad máxima.
 	public void agregarCliente(Cliente cliente) {
+		clienteCelulares = new ArrayList<Cliente>();
 		if(this.cantidadClientes < this.capacidadMaxima) {
 			this.clienteCelulares.add(cliente);
 		}
